@@ -35,11 +35,6 @@ ELSE (Boost_FOUND)
   MESSAGE(STATUS "ERROR: Boost not found")
 ENDIF (Boost_FOUND)
 
-########### Doxygen ###########
-SET(DOXYFILE_LATEX "NO")
-SET(DOXYFILE_OUTPUT_DIR ${PROJECT_SOURCE_DIR}/doc)
-include(UseDoxygen)
-
 ########### Simple Open EtherCAT Master Library ###########
 add_subdirectory(soem)
 
